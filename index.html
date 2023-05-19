@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Alegreya+Sans&family=Anton&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <h1>Survey on Favourite Programming Language</h1>
+
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Add User</legend>
+
+                <div>
+                    <label for="firstName">First Name: </label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+                <div>
+                    <label for="lastName">Last Name: </label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+                <div>
+                    <label for="email">Email address: </label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="status">Status: </label>
+                    <select name="status" id="status">
+                        <option value="Student">Student</option>
+                        <option value="Instructor">Instructor</option>
+                        <option value="Guest">Guest</option>
+                    </select>
+                </div>
+                <div>
+                    <p>Choose your favourite programming language: </p>
+
+                    <div>
+                        <input type="radio" id="favLanguage1" name="fav_language" value="HTML">
+                        <label for="favLanguage1">HTML</label>
+                    </div>
+                    <div>
+                        <input type="radio" id = "favLanguage2" name="fav_language" value = "CSS">
+                        <label for="favLanguage2">CSS</label>
+                    </div>
+                    <div>
+                        <input type = "radio" id = "favLanguage3" name="fav_language" value = "JavaScript">
+                        <label for="favLanguage3">JavaScript</label>
+                    </div>
+                    
+                    <div>
+                        <label for="comments">Comments: </label>
+                        <textarea id="comments"></textarea>
+                    </div>
+                    
+                </div>
+                <div>
+                    <label for="currentDate">Current Date: </label>
+                    <input type="date" id = "currentDate" name="current_date">
+                </div>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Sign up for newsletter</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="termsAndConditions" name="terms_and_conditions">
+                    <label for="termsAndConditions">Agree to Terms and Conditions </label>
+                </div>
+                <div>
+                    <button type="submit">Submit </button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
